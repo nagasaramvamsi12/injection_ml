@@ -18,7 +18,7 @@ app.post('/api/login', async (req, res) => {
 
   try {
     // Send query string to ML model (Flask)
-    const mlRes = await axios.post('http://localhost:8000/detect', {
+    const mlRes = await axios.post('http://localhost:8001/detect', {
       query,
     });
 
